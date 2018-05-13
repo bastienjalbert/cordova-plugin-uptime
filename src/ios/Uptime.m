@@ -35,8 +35,8 @@
     
     struct timespec tp;
     long long uptime;
-
-    bool includeDeepSleep = [[command.arguments objectAtIndex:0] boolValue];
+    // set true by default
+    bool includeDeepSleep = true;
 
      if(includeDeepSleep)
      {
